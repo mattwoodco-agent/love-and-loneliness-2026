@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources & Support - Love & Loneliness 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.7;
+            color: #2c2c2c;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.95);
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .nav-back {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .nav-back a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 0.8rem 2rem;
+            border: 2px solid #667eea;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-back a:hover {
+            background-color: #667eea;
+            color: white;
+        }
+        
+        .resource-section {
+            background: #f8f9fa;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            border-left: 4px solid #764ba2;
+        }
+        
+        .resource-section h2 {
+            color: #4a5568;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .resource-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            border-top: 4px solid #667eea;
+            transition: transform 0.3s ease;
+        }
+        
+        .resource-card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .resource-card h3 {
+            color: #4a5568;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .resource-card p {
+            color: #718096;
+            margin-bottom: 1rem;
+        }
+        
+        .resource-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.3s ease;
+        }
+        
+        .resource-link:hover {
+            border-bottom: 1px solid #667eea;
+        }
+        
+        .emergency-section {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .emergency-section h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .crisis-resources {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .crisis-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .tools-section {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .books-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .book-item {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 3px solid #667eea;
+        }
+        
+        .book-title {
+            font-weight: bold;
+            color: #4a5568;
+        }
+        
+        .book-author {
+            color: #718096;
+            font-style: italic;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+            
+            .resource-grid,
+            .crisis-resources,
+            .books-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Resources & Support</h1>
+            <p>Tools, support services, and guidance for building meaningful connections</p>
+        </div>
+        
+        <div class="nav-back">
+            <a href="index.html">← Back to Main Site</a>
+        </div>
+        
+        <div class="emergency-section">
+            <h2>🚨 Crisis Support</h2>
+            <p>If you're experiencing a mental health emergency or thoughts of self-harm, please reach out immediately:</p>
+            
+            <div class="crisis-resources">
+                <div class="crisis-card">
+                    <h3>National Suicide Prevention Lifeline</h3>
+                    <p><strong>988</strong><br>24/7 crisis support</p>
+                </div>
+                <div class="crisis-card">
+                    <h3>Crisis Text Line</h3>
+                    <p>Text <strong>HOME</strong> to <strong>741741</strong><br>Free 24/7 crisis support</p>
+                </div>
+                <div class="crisis-card">
+                    <h3>International Association for Suicide Prevention</h3>
+                    <p>Resources for crisis support worldwide</p>
+                </div>
+                <div class="crisis-card">
+                    <h3>Emergency Services</h3>
+                    <p><strong>911</strong> (US) or local emergency number</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="resource-section">
+            <h2>Professional Support Services</h2>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h3>🧠 Mental Health Services</h3>
+                    <p>Find licensed therapists and counselors in your area who specialize in loneliness and relationship issues.</p>
+                    <a href="https://www.psychologytoday.com" class="resource-link">Psychology Today Therapist Directory</a>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>💬 Support Groups</h3>
+                    <p>Connect with others who understand your experiences through local and online support groups.</p>
+                    <a href="https://www.nami.org" class="resource-link">NAMI Support Groups</a>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>📱 Telehealth Options</h3>
+                    <p>Access mental health support from the comfort of your home through online therapy platforms.</p>
+                    <a href="https://www.betterhelp.com" class="resource-link">BetterHelp Online Therapy</a>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>🏥 Community Mental Health</h3>
+                    <p>Low-cost and sliding-scale mental health services in your community.</p>
+                    <a href="https://www.samhsa.gov" class="resource-link">SAMHSA Treatment Locator</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tools-section">
+            <h2>🛠️ Self-Help Tools & Apps</h2>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h3>📝 Mood Tracking</h3>
+                    <p>Track your emotional patterns and identify triggers for loneliness.</p>
+                    <ul style="margin-top: 0.5rem;">
+                        <li>Mood Meter (Yale)</li>
+                        <li>Daylio Mood Tracker</li>
+                        <li>eMoods</li>
+                    </ul>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>🧘 Mindfulness & Meditation</h3>
+                    <p>Apps and resources for developing emotional awareness and self-compassion.</p>
+                    <ul style="margin-top: 0.5rem;">
+                        <li>Headspace</li>
+                        <li>Calm</li>
+                        <li>Insight Timer</li>
+                    </ul>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>🤝 Social Connection Apps</h3>
+                    <p>Platforms designed to help you meet like-minded people and build friendships.</p>
+                    <ul style="margin-top: 0.5rem;">
+                        <li>Meetup</li>
+                        <li>Bumble BFF</li>
+                        <li>Nextdoor (neighbors)</li>
+                    </ul>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>🎯 Goal Setting</h3>
+                    <p>Set and track social and personal development goals.</p>
+                    <ul style="margin-top: 0.5rem;">
+                        <li>Habitica</li>
+                        <li>Forest</li>
+                        <li>Strides</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="resource-section">
+            <h2>📚 Recommended Reading</h2>
+            <div class="books-list">
+                <div class="book-item">
+                    <div class="book-title">Together: The Healing Power of Human Connection</div>
+                    <div class="book-author">by Vivek H. Murthy, M.D.</div>
+                </div>
+                
+                <div class="book-item">
+                    <div class="book-title">Lonely: Human Nature and the Need for Social Connection</div>
+                    <div class="book-author">by John T. Cacioppo</div>
+                </div>
+                
+                <div class="book-item">
+                    <div class="book-title">The Village Effect: How Face-to-Face Contact Can Make Us Healthier and Happier</div>
+                    <div class="book-author">by Susan Pinker</div>
+                </div>
+                
+                <div class="book-item">
+                    <div class="book-title">Attached: The New Science of Adult Attachment</div>
+                    <div class="book-author">by Amir Levine and Rachel Heller</div>
+                </div>
+                
+                <div class="book-item">
+                    <div class="book-title">How to Be an Adult in Relationships</div>
+                    <div class="book-author">by David Richo</div>
+                </div>
+                
+                <div class="book-item">
+                    <div class="book-title">The Gifts of Imperfection</div>
+                    <div class="book-author">by Brené Brown</div>
+                </div>
+                
+                <div class="book-item">
+                    <div class="book-title">Digital Minimalism</div>
+                    <div class="book-author">by Cal Newport</div>
+                </div>
+                
+                <div class="book-item">
+                    <div class="book-title">Bowling Alone: The Collapse and Revival of American Community</div>
+                    <div class="book-author">by Robert D. Putnam</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="resource-section">
+            <h2>🌱 Building Social Skills</h2>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h3>💬 Conversation Skills</h3>
+                    <p>Resources for improving communication and social interaction abilities.</p>
+                    <ul style="margin-top: 0.5rem;">
+                        <li>Dale Carnegie courses</li>
+                        <li>Toastmasters International</li>
+                        <li>Social skills workshops</li>
+                    </ul>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>🎭 Social Anxiety Support</h3>
+                    <p>Specific resources for those dealing with social anxiety in relationships.</p>
+                    <ul style="margin-top: 0.5rem;">
+                        <li>Social Anxiety Association</li>
+                        <li>Cognitive Behavioral Therapy resources</li>
+                        <li>Exposure therapy guidance</li>
+                    </ul>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>🤝 Volunteer Opportunities</h3>
+                    <p>Build connections while contributing to your community.</p>
+                    <ul style="margin-top: 0.5rem;">
+                        <li>VolunteerMatch</li>
+                        <li>United Way</li>
+                        <li>Local community centers</li>
+                    </ul>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>🏃 Activity Groups</h3>
+                    <p>Join activities aligned with your interests to meet like-minded people.</p>
+                    <ul style="margin-top: 0.5rem;">
+                        <li>Recreation centers</li>
+                        <li>Book clubs</li>
+                        <li>Fitness groups</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="resource-section">
+            <h2>🔬 Educational Resources</h2>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h3>🎓 Online Courses</h3>
+                    <p>Free and paid courses on relationships, psychology, and personal development.</p>
+                    <ul style="margin-top: 0.5rem;">
+                        <li>Coursera: The Science of Well-Being (Yale)</li>
+                        <li>edX: Introduction to Psychology courses</li>
+                        <li>MasterClass: Communication skills</li>
+                    </ul>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>🎙️ Podcasts</h3>
+                    <p>Audio content exploring relationships, mental health, and human connection.</p>
+                    <ul style="margin-top: 0.5rem;">
+                        <li>Where Should We Begin? (Esther Perel)</li>
+                        <li>On Being</li>
+                        <li>The Hilarious World of Depression</li>
+                    </ul>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>📰 Newsletters & Blogs</h3>
+                    <p>Stay informed about the latest research and insights on relationships and loneliness.</p>
+                    <ul style="margin-top: 0.5rem;">
+                        <li>Greater Good Science Center (UC Berkeley)</li>
+                        <li>The Gottman Institute blog</li>
+                        <li>Harvard Health Publishing</li>
+                    </ul>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>🔬 Research Institutions</h3>
+                    <p>Follow the latest scientific research on human connection and loneliness.</p>
+                    <ul style="margin-top: 0.5rem;">
+                        <li>Stanford Center for Compassion and Altruism</li>
+                        <li>UCLA Center for Social Medicine</li>
+                        <li>Harvard Study of Adult Development</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="nav-back" style="margin-top: 3rem;">
+            <a href="index.html">← Back to Main Site</a>
+        </div>
+    </div>
+</body>
+</html>
